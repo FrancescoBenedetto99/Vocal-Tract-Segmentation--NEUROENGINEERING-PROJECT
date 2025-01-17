@@ -2,7 +2,7 @@
 
 ## Context and Clinical Relevance
 
-This neuroengineering project focuses on **segmenting the vocal tract** using a **deep learning architecture (IMU-Net)**, a variation of U-Net. The goal is to divide the vocal tract into seven distinct segments, leveraging **Magnetic Resonance Imaging (MRI)**:
+This neuroengineering project focuses on **segmenting the vocal tract** using a **architecture IMU-Net**, a variation of U-Net. The goal is to divide the vocal tract into seven distinct segments, leveraging **Magnetic Resonance Imaging (MRI)**:
 
 1. Background and vocal tract
 2. Upper lip
@@ -12,18 +12,35 @@ This neuroengineering project focuses on **segmenting the vocal tract** using a 
 6. Lower lip
 7. Head
 
-![Example MRI Image](path_to_mri_image.jpg)
 
+<div align="center">
+   <img width="480" alt="MRI Image" src="IMAGES/Screenshot 2025-01-17 alle 01.39.54.png">
+   <br>
+   <strong><em>Figure 1– Vocal tract segment</em></strong>
+</div>
+
+<br> <!-- Spazio extra tra figura e testo -->
 This segmentation can be valuable in clinical settings, supporting the diagnosis of speech-related disorders like **Apraxia of Speech** and **Dysarthria**, as well as assessing **velopharyngeal closure**.
 
+<div align="center">
+   <img width="240" alt="MRI Image" src="IMAGES/iniziale.jpg">
+   <br>
+   <strong><em>Figure 2– MRI image before preprocessing </em></strong>
+</div>
+<br> <!-- Spazio extra tra figura e testo -->
+
+
+
+
+- **Data augmentation** involved rotating, translating, and zooming images to enhance model generalization.
+
+
+  
 ## Data Preparation
 
 - The dataset was divided into **training**, **validation**, and **test** sets, stratified by patient, with a 70%/20%/10% split.
 - **Preprocessing** included removing Gaussian noise using gamma transformations, Gaussian filtering, and pixel thresholding to eliminate noise.
   
-![Preprocessing Example](path_to_preprocessing_example.jpg)
-
-- **Data augmentation** involved rotating, translating, and zooming images to enhance model generalization.
 
 ## Neural Network Architecture
 
