@@ -1,5 +1,7 @@
 # Vocal Tract Segmentation using IMU-Net
 
+Project for the Neuroengineering course held at @Politecnico di Milano.
+
 ## Context and Clinical Relevance
 
 This neuroengineering project focuses on **segmenting the vocal tract** using a **architecture IMU-Net**, a variation of U-Net. This model could be applied in clinical environments to aid in diagnosing disorders related to the vocal tract, such as **Apraxia of Speech** and **Dysarthria**. 
@@ -13,6 +15,7 @@ The goal is to divide the vocal tract into seven distinct segments, leveraging *
 6. Lower lip
 7. Head
 
+<br> <!-- Spazio extra tra figura e testo -->
 
 <div align="center">
    <img width="480" alt="MRI Image" src="IMAGES/Screenshot 2025-01-17 alle 01.39.54.png">
@@ -22,6 +25,7 @@ The goal is to divide the vocal tract into seven distinct segments, leveraging *
 
 <br> <!-- Spazio extra tra figura e testo -->
 This segmentation can be valuable in clinical settings, supporting the diagnosis of speech-related disorders like **Apraxia of Speech** and **Dysarthria**, as well as assessing **velopharyngeal closure**.
+<br> <!-- Spazio extra tra figura e testo -->
 
 <div align="center">
    <img width="240" alt="MRI Image" src="IMAGES/iniziale.jpg">
@@ -58,11 +62,12 @@ The **IMU-Net** architecture was implemented, built on a U-Net backbone with res
 - **Metrics Monitored**: DICE coefficient, accuracy, precision, recall, and mean IoU (Intersection over Union).
 - The loss function used was **weighted cross-entropy** to give more importance to underrepresented classes.
 - The **Adam optimizer** was used with a learning rate scheduler and early stopping.
+<br> <!-- Spazio extra tra figura e testo -->
 
 <div align="center">
    <img width="480" alt="GIF Image" src="IMAGES/video.gif">
    <br>
-   <strong><em>Figure 3– Training over epochs</em></strong>
+   <strong><em>Figure 3– Predicted mask over training epochs</em></strong>
 </div>
 <br> <!-- Spazio extra tra figura e testo -->
 
