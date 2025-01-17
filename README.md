@@ -39,6 +39,16 @@ This segmentation can be valuable in clinical settings, supporting the diagnosis
 
 - **Data augmentation** involved rotating, translating, and zooming images to enhance model generalization.
 
+<br> <!-- Spazio extra tra figura e testo -->
+
+<div align="center">
+   <img width="240" alt="MRI Image" src="IMAGES/iniziale.jpg">
+   <br>
+   <strong><em>Figure 2– MRI image before preprocessing </em></strong>
+</div>
+<br> <!-- Spazio extra tra figura e testo -->
+
+
 
   
 ## Data Preparation
