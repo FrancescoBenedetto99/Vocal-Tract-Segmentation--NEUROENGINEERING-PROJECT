@@ -25,7 +25,13 @@ The goal is to divide the vocal tract into seven distinct segments, leveraging *
 
 <br> <!-- Spazio extra tra figura e testo -->
 This segmentation can be valuable in clinical settings, supporting the diagnosis of speech-related disorders like **Apraxia of Speech** and **Dysarthria**, as well as assessing **velopharyngeal closure**.
-<br> <!-- Spazio extra tra figura e testo -->
+
+  
+## Data Preparation
+
+- The dataset was divided into **training**, **validation**, and **test** sets, stratified by patient, with a 70%/20%/10% split.
+- **Preprocessing** included removing Gaussian noise using gamma transformations, Gaussian filtering, and pixel thresholding to eliminate noise.
+  <br> <!-- Spazio extra tra figura e testo -->
 
 <div align="center">
    <img width="240" alt="MRI Image" src="IMAGES/iniziale.jpg">
@@ -42,20 +48,13 @@ This segmentation can be valuable in clinical settings, supporting the diagnosis
 <br> <!-- Spazio extra tra figura e testo -->
 
 <div align="center">
-   <img width="240" alt="MRI Image" src="IMAGES/iniziale.jpg">
+   <img width="240" alt="MRI Image" src="IMAGES/augm proc.png">
    <br>
-   <strong><em>Figure 2– MRI image before preprocessing </em></strong>
+   <strong><em>Figure 2– MRI image after preprocessing  </em></strong>
 </div>
 <br> <!-- Spazio extra tra figura e testo -->
 
 
-
-  
-## Data Preparation
-
-- The dataset was divided into **training**, **validation**, and **test** sets, stratified by patient, with a 70%/20%/10% split.
-- **Preprocessing** included removing Gaussian noise using gamma transformations, Gaussian filtering, and pixel thresholding to eliminate noise.
-  
 
 ## Neural Network Architecture
 
