@@ -2,7 +2,8 @@
 
 ## Context and Clinical Relevance
 
-This neuroengineering project focuses on **segmenting the vocal tract** using a **architecture IMU-Net**, a variation of U-Net. The goal is to divide the vocal tract into seven distinct segments, leveraging **Magnetic Resonance Imaging (MRI)**:
+This neuroengineering project focuses on **segmenting the vocal tract** using a **architecture IMU-Net**, a variation of U-Net. This model could be applied in clinical environments to aid in diagnosing disorders related to the vocal tract, such as **Apraxia of Speech** and **Dysarthria**. 
+The goal is to divide the vocal tract into seven distinct segments, leveraging **Magnetic Resonance Imaging (MRI)**:
 
 1. Background and vocal tract
 2. Upper lip
@@ -51,7 +52,6 @@ The **IMU-Net** architecture was implemented, built on a U-Net backbone with res
 - **Bottleneck**: Includes dilated convolutions to increase the receptive field.
 - **Decoding blocks**: Reconstruct spatial details using skip connections to combine global and local information.
 
-![IMU-Net Architecture](path_to_imunet_architecture_diagram.jpg)
 
 ## Training Methodology
 
@@ -59,26 +59,22 @@ The **IMU-Net** architecture was implemented, built on a U-Net backbone with res
 - The loss function used was **weighted cross-entropy** to give more importance to underrepresented classes.
 - The **Adam optimizer** was used with a learning rate scheduler and early stopping.
 
+<div align="center">
+   <img width="480" alt="GIF Image" src="IMAGES/video.gif">
+   <br>
+   <strong><em>Figure 3– Training over epochs</em></strong>
+</div>
+<br> <!-- Spazio extra tra figura e testo -->
+
 ## Results
 
 - Multiple trials were conducted with varying hyperparameters such as learning rate, batch size, and number of epochs.
 - The best model was obtained with **filtered and augmented data**, yielding promising results in segmenting the seven vocal tract classes.
 - **Cross-validation** was conducted with different patient combinations to assess model generalization.
 
-![Model Performance](path_to_model_performance_chart.jpg)
-
 ## Conclusions
 
 - The IMU-Net architecture successfully segments the vocal tract into the desired classes.
 - The model shows potential for clinical application in diagnosing speech disorders.
 
-### Future Work:
-- Test the model on larger, multi-center datasets.
-- Evaluate the model's robustness to noise at various levels.
-- Explore additional augmentations, such as mirroring images and testing different neural network architectures.
 
-## Clinical Context
-
-This model could be applied in clinical environments to aid in diagnosing disorders related to the vocal tract, such as **Apraxia of Speech** and **Dysarthria**. High recall is especially important to avoid false negatives, ensuring that patients with speech-related conditions are correctly identified.
-
-![Clinical Application](path_to_clinical_application_image.jpg)
