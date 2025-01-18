@@ -1,6 +1,6 @@
 # Vocal Tract Segmentation with IMU-Net
 
-Project for Neuroengineering at @Politecnico di Milano
+Project for Neuroengineering course held at @Politecnico di Milano
 
 ## Overview
 
