@@ -4,7 +4,7 @@ Project for Neuroengineering course held at @Politecnico di Milano
 
 ## Overview
 
-This project focuses on segmenting the **vocal tract** using **IMU-Net**, a U-Net variant designed for medical imaging tasks. The goal is to segment the vocal tract into seven distinct regions using **MRI images**:
+This project focuses on segmenting the **vocal tract** using **IMU-Net**, an improved U-Net variant designed for segmentation. The goal is to segment the vocal tract into seven distinct regions using **MRI images**:
 
 1. Background and vocal tract
 2. Upper lip
